@@ -13,9 +13,7 @@
     
     
     <p>STAT 268, Statistics and Proabability I</p>
-   <h2>
-    Expected Value
-   </h2>
+   
 
    <h2>
     Distributions
@@ -35,7 +33,27 @@
     The sample space is the SET of all possible outcomes. That is, the collection of every possibility in an experiment. <br>
     For example, consider rolling a die once. The sample space here is clearly {1,2,3,4,5,6} as that is the set of every possible outcome.<br><br>
 
-    Great. So this random variable takes something from this sample space, and gives us something in the reals. But WHAT in the reals? <bold> Whatever you like! </bold>
+    Great. So this random variable takes something from this sample space, and gives us something in the reals. But WHAT in the reals? Whatever you like!<br><br>
+
+    For example, let's let X, our new random variable, to be the number of heads you get when you roll a die twice.
+    This random variables has RANGE {0,1,2} because you can get a head either no times, one time, or both times. <br><br>
+
+    This takes us right into our next concept, which is expected value of a random variable.
+   </p>
+
+   <h2>
+    Expected Value
+   </h2>
+   <p>
+    The expected value of a random variable is exactly what it sounds like. The expected value specifically answers the following question:<br><br>
+    If I repeat the SAME experiment n times, where n is a large number, what value does the random variable take on average? <br>
+
+    That is, if we repeat an experiment many times, what value can we expect to get most of the time?<br>
+
+    This is NOT to be confused with convergence in distribution, or convergence at ALL, as that has to do with completing ONE trial MANY times. More on this in STAT 269. <br><br>
+
+    How do we compute this expected value, you ask? Well, it's the first moment of a random variable (more on this later in this page). To compute the first moment, we take the integral (ugh) of the pdf with x multiplied in. <br>
+    Unfortauntely, for a discrete random variable (also covered later, just remember this for now), we must iterate over each possibility of the random variable with the position we are at multiplied in each iteration. Examples below because that makes no sense.
    </p>
     <style>
         h1{
