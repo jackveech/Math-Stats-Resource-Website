@@ -55,6 +55,30 @@
     How do we compute this expected value, you ask? Well, it's the first moment of a random variable (more on this later in this page). To compute the first moment, we take the integral (ugh) of the pdf with x multiplied in. <br>
     Unfortauntely, for a discrete random variable (also covered later, just remember this for now), we must iterate over each possibility of the random variable with the position we are at multiplied in each iteration. Examples below because that makes no sense.
    </p>
+
+   <h2>
+    Continuous vs Discrete Random Variables
+   </h2>
+   <p>
+    There are two types of random varibles. <br>
+    DISCRETE random variables are the "simpler" kind. They take on discrete values. For example, a random variable corresponding to the rolling of a 6-sided die will always be discrete, because your outputs are limited to {1,2,3,4,...}. <br>
+    When we iterate over a discrete random variable, say for expected value, we look at the possible outputs, and do NOT integrate. <br><br>
+
+    CONTINUOUS random variables can take on any value in a range. <br><br>
+
+    Note that continuous random variables are represented (think drawn, or worked with) by a probability density function. Discrete random variables, on the other hand, use a probability mass function. <br>
+    What do these functions allow us to do? For a probability mass function, we can determine the probability that a random variables takes on that value. For example, rolling a 6-sided die once, our PMF for the random variable X representing the value we get from rolling the die would be: <br><br>
+
+    P(X=1) = 1/6 <br><br>
+    P(X=2) = 1/6 <br><br>
+    P(X=3) = 1/6 <br><br>
+    P(X=4) = 1/6 <br><br>
+    P(X=5) = 1/6 <br><br>
+    P(X=6) = 1/6 <br><br>
+    The explanation here is that you have 1/6 chance of getting each value, and each is equally likely. <br>
+    Of course, this relationship is not always equal, and your random variable can represent literally anything given the context of the situation. <br>
+    The RANGE of a random variable is every output it can take. Think of rolling a die, as we have done many times. A likely range for a random variable might be {0,1,2,3,4,5} if those are the values it can take on.
+   </p>
     <style>
         h1{
             text-align: center;
