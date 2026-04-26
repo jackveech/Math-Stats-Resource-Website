@@ -28,6 +28,34 @@
 
 
     </p>
+
+    <h3>
+    Moment Generating Functions
+   </h3>
+    <p>
+        In STAT 269, you will spend about a week or two on moment generating functions (the MGF). You learned this in 268, but it's worth covering again. <br><br>
+
+        Before we introduce the moment generating function, we must first introduce what a moment is.<br>
+        Think of moments as a set of measurements that tell you where a "cloud" of data is located, how wide it is, and whether it’s lopsided.<br>
+        A distribution on its own is USEFUL, but we can only do so much with it. By looking at the moments of a distribution of data, we can gain more insight into what is actually going on. <br>
+        In fact, E[X], or the expected value, is actually the first moment. <br><br>
+        We can derive these ourselves, by taking the first moment as E[X], second as E[X^2], third as E[X^3] and so on, but there is an easier way.<br>
+        The moment generating function is a function (f(x) = y) that allows you to take the moments of a distribution just by taking the derivative and setting equal to zero. <br>
+        So if you want to take the second moment, you take the second DERIVATIVE of the mgf, plug in zero, and there is your second moment.<br>
+        To find the momenet generating function, you need to take the expected value of e^tx. That is, E[e^tx] yields the MGF of a distriubtion with variable x.<br>
+        Of course, examples of this are seen in the first test walkthrough video.<br>
+    </p>
+
+    <h3>
+    Covariance and Correlation
+   </h3>
+    <p>
+        Yet another important topic that WILL be tested is covariance and correlation.<br>
+        Of course we haven't covered covariance yet but I will get correlation out of the way very quickly: correlation is a standarized/unitless version of covariance.<br>
+        What does that mean? Well, covariance can have units such as l/100km or something silly, which means you need to analyze it in the context of the distribution and its units. This also makes it hard to compare covariance between multiple datasets that might use different units. As such, we use correlation for a unitless version of what you are about to see with covariance. <br><br>
+
+        This explanation assumes you know what variance is. If you don't, refer to the STAT 268 page for a deep dive into moments, expected value, and variance.
+    </p>
     
 </body>
 </html>
