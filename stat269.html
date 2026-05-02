@@ -30,6 +30,17 @@
     </p>
 
     <h3>
+    A Quick Note on "iid""
+   </h3>
+    <p>
+        We need to quickly cover what "iid" means. You will see it everywhere in this class, but never assume a set of random variables are iid. <br>
+        A set of random variables are iid if they are "independent and identially distributed." This is rare in reality because nothing useful will be iid.<br>
+        So for example, the height of men and scores on a test might be iid. The height of men and scores on a test are not at all related (unless the test is your height, but let's assume that's not the case), but both might follow a normal with the same parameters. <br><br>
+        In terms of tested content, you should be able to understand what iid actually means when you are told a set of random variables are iid. 
+        You can assert in the case some rvs are iid that they all follow, say, N(u, sigma), and then assert some things about those parameters. Otherwise, this isn't that important, and is more of a footnote of the course.
+    </p>
+
+    <h3>
     Moment Generating Functions
    </h3>
     <p>
@@ -55,6 +66,30 @@
         What does that mean? Well, covariance can have units such as l/100km or something silly, which means you need to analyze it in the context of the distribution and its units. This also makes it hard to compare covariance between multiple datasets that might use different units. As such, we use correlation for a unitless version of what you are about to see with covariance. <br><br>
 
         This explanation assumes you know what variance is. If you don't, refer to the STAT 268 page for a deep dive into moments, expected value, and variance.
+    </p>
+
+    <h3>
+    Weak Law of Large Numbers
+   </h3>
+    <p>
+        This is the first "new" topic in this class. Formally, the Weak Law of Large Numbers (WLLN) is as follows:<br><br>
+        Let X 1 , . . . , X n be i.i.d. random variables with common mean μ and variance ω 2 . For any ε > 0,
+        the limit as n approaches infinity of P (|X n → μ| > ε) is equal to 0. <br> You have this in your textbook, but I figured I'd remind you.<br><br>
+        Note, usually for your first test in this class you will NEED to be familiar with this formal defintion. To stress this: THERE IS a DEFINITION question on the first test. KNOW YOUR DEFINITIONS. PLEASE. <br>
+        Anyways, what does the WLLN actually mean in real terms? It means the sample mean will appraoch the population mean with infinite (approaching infinite) trials. <br>
+        You don't need to fret too hard about this chapter, as the applications in this course are relatively minimal (though there are hundreds of applications in statistics as a whole). You should mostly just be familiar with the definition and know what it does.
+    </p>
+
+    <h3>
+    Central Limit Theorem
+   </h3>
+    <p>
+        The Central Limit Theorem (CLT) is IMPORTANT. PLEASE understant the CLT at all costs. Remember you will probably be asked to define the CLT on your first test, so remember this if you want three free marks (out of 15). <br>
+        The CLT is formally defined as follows: <br><br>
+        Let X1, ..., Xn be iid random variables with E[X] = u and variance (sigma)^2 (where both are finite). Then: <br><br>
+        (Sample mean) - (Population mean)/sigma/root n will converge in distribution to a standard normal. <br><br>
+        Pretty cool, right? Of course not, because you have no idea what that means. In English, it means as sample size increases, the distribution of sample means approaches a normal (bell-shaped) distribution, regardless of the population’s original distribution shape. <br>
+        With that said, know the formal definition and know how to apply it. See the first test walkthrough video for an example of how we apply the CLT.
     </p>
     
 </body>
